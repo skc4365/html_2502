@@ -6,6 +6,7 @@ const s3 = d.querySelector("#s3 .result");
 const s4 = d.querySelector("#s4 .result");
 const s5 = d.querySelector("#s5 .result");
 const img = d.querySelector("#s5 #img");
+const img_x = d.querySelector("#s5 #img_x");
 var txt = "test";
 var txt2 = "test2";
 
@@ -47,7 +48,7 @@ var p1_txt2 = d.createTextNode(txt2);
 s1.innerHTML = "";
 s1.append(p1_txt, br, p1_txt2, p1);
 
-// --------------------------------------s2-----
+// // --------------------------------------s2-----
 // date객체 생성
 var today = new Date();
 var nowMonth = today.getMonth(),
@@ -62,7 +63,7 @@ var theMonth = worldcup.getMonth(),
 // 요소의 생성, 객체 사용
 txt = "";
 txt2 = "";
-var br = d.createElement("br");
+var br2 = d.createElement("br");
 var p2 = d.createElement("p");
 txt = `현재 월: ${nowMonth} - 일: ${nowDate} - 요일: ${nowDay}`;
 var p2_txt = d.createTextNode(txt);
@@ -71,15 +72,15 @@ var p2_txt2 = d.createTextNode(txt2);
 
 // 출력
 // p2.appendChild(p2_txt);
-// p2.appendChild(br);
+// p2.appendChild(br2);
 // p2.appendChild(p2_txt2);
 // s2.innerHTML = "";
 // s2.appendChild(p2);
 // 출력2
 s2.innerHTML = "";
-s2.appendChild(p2_txt, br, p2_txt2, p2);
+s2.append(p2_txt, br2, p2_txt2, p2);
 
-// --------------------------------------s3-----
+// // --------------------------------------s3-----
 // date객체 생성
 var today = new Date();
 var nowYear = today.getFullYear();
@@ -101,7 +102,7 @@ var p3_txt = d.createTextNode(txt);
 s3.innerHTML = "";
 s3.appendChild(p3_txt, p3);
 
-// --------------------------------------s4-----
+// // --------------------------------------s4-----
 var num = 2.1234;
 var maxNum = Math.max(10, 5, 8, 30),
   minNum = Math.min(10, 5, 8, 30),
@@ -125,7 +126,8 @@ var p4_txt = d.createTextNode(txt);
 s4.innerHTML = "";
 s4.appendChild(p4_txt, p4);
 
-// --------------------------------------s5-----
+// // --------------------------------------s5-----
+var ranomNum = Math.ceil(Math.random() * 3);
 var game = "가위";
 // var game = prompt("가위, 바위 보 중 선택하세요?", "가위");
 var gameNum;
@@ -144,27 +146,32 @@ switch (game) {
     location.reload();
 }
 
+// OX이미지 출력
+gameNum == ranomNum
+  ? (img_x.src = "./images/game_1.jpg")
+  : (img_x.src = "./images/game_2.jpg");
+
 // 출력1
-// var ranomNum = Math.ceil(Math.random() * 3);
-// if (gameNum == 1) {
+// if (ranomNum == 1) {
+//   // img.setAttribute("속성이름", "속성값");
 //   img.setAttribute("src", "./images/math_img_1.jpg");
-// } else if (gameNum == 2) {
+// } else if (ranomNum == 2) {
 //   img.setAttribute("src", "./images/math_img_2.jpg");
 // } else {
 //   img.setAttribute("src", "./images/math_img_3.jpg");
 // }
 
 // 출력2
-// var ranomNum = Math.ceil(Math.random() * 3);
-// if (gameNum == 1) {
+// if (ranomNum == 1) {
+//   // src 속성값을 대입
 //   img.src = "./images/math_img_1.jpg";
-// } else if (gameNum == 2) {
+// } else if (ranomNum == 2) {
 //   img.src = "./images/math_img_2.jpg";
 // } else {
 //   img.src = "./images/math_img_3.jpg";
 // }
 
 // 출력3
-var ranomNum = Math.ceil(Math.random() * 3);
+// 게임번호
 var imgPath = "./images/math_img_" + ranomNum + ".jpg";
 img.src = imgPath;
