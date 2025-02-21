@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOB 객체</title>
+    <style>
+      section {
+        margin: 30px;
+        padding: 30px;
+        border: 1px solid green;
+      }
+      p {
+        font-size: 23px;
+        color: rgb(86, 116, 28);
+      }
+      p.result {
+        font-weight: bold;
+      }
+      button {
+        /* 기본폰트 1.5배 */
+        font-size: 1.5rem;
+        padding: 10px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="s1">
+      <h3>윈도우 객체</h3>
+      <p>
+        window.location.href: 현재 페이지의 href(URL)을 반환합니다. <br />
+        window.location.hostname: 웹 호스트의 도메인 이름을 반환합니다. <br />
+        window.location.pathname: 현재 페이지의 경로와 파일 이름을 반환합니다.
+        <br />
+        window.location.protocol: 사용된 웹 프로토콜(http: 또는 https:)을
+        반환합니다. <br />
+        window.location.assign(): 새 문서를 로드합니다
+      </p>
+      <p class="result"></p>
+    </section>
+    <section id="s2">
+      <p class="result"></p>
+    </section>
+    <section id="s3">
+      <p class="result"></p>
+    </section>
+    <section id="s4">
+      <p class="result"></p>
+    </section>
+    <section id="s5">
+      <p class="result"></p>
+    </section>
+    <section id="s6">
+      <input type="button" value="Load new document" onclick="newDoc()" />
+      <br />
+      <input type="button" value="Back" onclick="goBack()" />
+      <br />
+      <input type="button" value="Forward" onclick="goForward()" />
+      <p class="result"></p>
+    </section>
+    <section id="s7">
+      <p class="result"></p>
+    </section>
+    <section id="s8">
+      <!-- setTimeout(함수명, 3000밀리초) : 3000밀리초후에 함수를 실행한다. -->
+      <button onclick="setTimeout(myFunction, 3000)">setTimeout(3초)</button>
+      <p class="result"></p>
+    </section>
+    <section id="s9">
+      <button onclick="mytime = setTimeout(myFunction, 3000)">
+        - START - setTimeout(3초) 실행하기
+      </button>
+      <p>START버튼 클릭후, 3초전에 해제할 수 있습니다.</p>
+      <button onclick="clearTimeout(mytime)">
+        - STOP - clearTimeout(해제하기)
+      </button>
+      <p class="result"></p>
+    </section>
+    <section id="s10">
+      <button onclick="clearInterval(myStop)">
+        clearInterval(인터벌 해제)
+      </button>
+      <p class="result"></p>
+    </section>
+    <section id="s11">
+      <p class="result"></p>
+    </section>
+
+    <script src="./js/index_BOM2.js"></script>
+  </body>
+</html>
