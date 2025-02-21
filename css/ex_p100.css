@@ -1,0 +1,10 @@
+* {
+  font-size: 20;
+  font-weight: bold;
+}
+
+section {
+  margin: 10px;
+  padding: 10px;
+  border: 1px double darkgoldenrod;
+}
