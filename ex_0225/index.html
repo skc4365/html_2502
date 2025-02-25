@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <!-- s1 -->
+    <button id="dateBtn">오늘은 몇 일? 이벤트리스너</button>
+    <p id="result"></p>
+
+    <!-- s2 -->
+    <hr />
+    <button id="hello">안녕! 익명이너함수_alert띄우기</button>
+
+    <!-- s3 -->
+    <hr />
+    <button id="hello_s3" style="background-color: palevioletred">
+      안녕! alert띄우기
+    </button>
+
+    <!-- s4 -->
+    <hr />
+    <button id="hello_twice">안녕! 연속2번_alert띄우기</button>
+
+    <!-- s5 -->
+    <hr />
+    <p id="result5">발생된 이벤트 리스트<br /></p>
+    <button id="myAction">마우스오버, 마우스아웃, 클릭</button>
+
+    <!-- s6 -->
+    <hr />
+    <p id="result6">window창 리사이징시에 창사이즈 출력<br /></p>
+
+    <!-- s7 -->
+    <hr />
+    <p id="result7">두 수의 곱셈:</p>
+    <button id="myCalculator">곱셈 계산기</button>
+
+    <!-- s8 -->
+    <hr />
+    <h3>
+      이벤트의 중복이 발생할때 Bubbling(기본)과 Capturing 이벤트를 전파 시키기
+    </h3>
+    <div id="divBubble" class="divBubble">
+      <h5>버블링 이벤트 순서 : p태그 이벤트(우선발생) ==>> div태그 이벤트</h5>
+      <p id="p1" class="p1">나를 클릭</p>
+    </div>
+    <div id="divCaptur" class="divCaptur">
+      <h5>캡쳐링 이벤트 순서 : div태그 이벤트(우선발생) ==>> p태그 이벤트</h5>
+      <p id="p2" class="p2">나를 클릭</p>
+    </div>
+
+    <!-- s9 -->
+    <hr />
+    <h3>이벤트리스너 삭제</h3>
+    <div id="myDIV" class="myDIV">
+      <p>
+        This div element has an onmousemove event handler that displays a random
+        number every time you move your mouse inside this orange field.
+      </p>
+      <p>Click the button to remove the div's event handler.</p>
+      <button id="removeEventBtn">이벤트 리스너 삭제</button>
+    </div>
+    <p id="result9"></p>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
