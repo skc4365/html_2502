@@ -1,0 +1,47 @@
+﻿@charset "utf-8";
+
+body {
+  font: 14px 맑은 고딕;
+}
+.container {
+  position: absolute;
+  width: 960px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #e7e7e7;
+}
+
+.sidebar {
+  float: right;
+  width: 200px;
+  height: 550px;
+  background-color: #dfd;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.content {
+  background-color: #ffffff;
+  padding-top: 5px;
+  padding-left: 10px;
+  width: 720px;
+  float: left;
+}
+
+footer {
+  padding: 10px 0;
+  background-color: #030;
+  color: #fff;
+  text-align: center;
+  clear: both;
+}
+
+header,
+section,
+footer,
+aside,
+article,
+figure {
+  display: block;
+}

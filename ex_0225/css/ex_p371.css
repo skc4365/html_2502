@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 1300px;
+  margin: 0 auto;
+}
+.container {
+  margin: 0 auto;
+}
+iframe {
+  background-color: rgb(108, 169, 149);
+}
+p {
+  display: inline-block;
+}
