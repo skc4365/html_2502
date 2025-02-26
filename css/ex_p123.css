@@ -1,0 +1,9 @@
+section {
+  margin: 5px;
+  padding: 5px;
+  border: 1px dotted greenyellow;
+}
+p#result {
+  font-size: 1em;
+  color: darkgreen;
+}
