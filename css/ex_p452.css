@@ -1,5 +1,5 @@
 section {
-  width: 1100px;
+  width: 1400px;
   margin: 0 auto;
 
   background-color: rgb(227, 233, 116);
@@ -20,7 +20,7 @@ span {
   height: 134px;
   border: 1px solid black;
   float: left;
-  margin: 60px;
+  margin: 100px 60px;
 }
 .s1 .movex:hover {
   -webkit-transform: translateX(50px);
@@ -49,7 +49,7 @@ span {
   height: 200px;
   border: 1px solid black;
   float: left;
-  margin: 60px
+  margin: 100px 60px;
 }
 .s2 .scalex:hover {
   -webkit-transform: scaleX(1.2);
@@ -78,7 +78,7 @@ span {
   height: 200px;
   border: 1px solid black;
   float: left;
-  margin: 60px;
+  margin: 100px 60px;
 }
 .s3 .rotate1:hover {
   -webkit-transform: rotate(20deg);
@@ -95,7 +95,140 @@ span {
   transform: rotate(-40deg);
 }
 /* -------------------------------s4 */
+
+.s4 .origin {
+  width: 210px;
+  height: 200px;
+  margin: 100px 60px;
+  float: left;
+  border: 1px solid black;
+  -webkit-perspective: 200px;
+  -moz-perspective: 200px;
+  -ms-perspective: 200px;
+  perspective: 200px;
+}
+.s4 .rotatex:hover {
+  -webkit-transform: rotateX(45deg);
+  -moz-transform: rotateX(45deg);
+  -o-transform: rotateX(45deg);
+  -ms-transform: rotateX(45deg);
+  transform: rotateX(45deg);
+}
+.s4 .rotatey:hover {
+  -webkit-transform: rotateY(45deg);
+  -moz-transform: rotateY(45deg);
+  -o-transform: rotateY(45deg);
+  -ms-transform: rotateY(45deg);
+  transform: rotateY(45deg);
+}
+.s4 .rotatez:hover {
+  -webkit-transform: rotateZ(45deg);
+  -moz-transform: rotateZ(45deg);
+  -o-transform: rotateZ(45deg);
+  -ms-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+}
+.s4 .rotatexyz:hover {
+  -webkit-transform: rotate3d(2.5, 1.2, -1.5, 45deg);
+  -moz-transform: rotate3d(2.5, 1.2, -1.5, 45deg);
+  -o-transform: rotate3d(2.5, 1.2, -1.5, 45deg);
+  -ms-transform: rotate3d(2.5, 1.2, -1.5, 45deg);
+  transform: rotate3d(2.5, 1.2, -1.5, 45deg);
+}
 /* -------------------------------s5 */
+.origin {
+  width: 160px;
+  height: 240px;
+  border: 1px solid black;
+  float: left;
+  margin: 100px 90px;
+}
+.skewx:hover {
+  -webkit-transform: skewX(30deg);
+  -ms-transform: skewX(30deg);
+  -moz-transform: skewX(30deg);
+  -o-transform: skewX(30deg);
+  transform: skewX(30deg);
+}
+.skewy:hover {
+  -webkit-transform: skewY(15deg);
+  -ms-transform: skewY(15deg);
+  -moz-transform: skewY(15deg);
+  -o-transform: skewY(15deg);
+  transform: skewY(15deg);
+}
+.skewxy:hover {
+  -webkit-transform: skew(-25deg, -15deg);
+  -ms-transform: skew(-25deg, -15deg);
+  -moz-transform: skew(-25deg, -15deg);
+  -o-transform: skew(-25deg, -15deg);
+  transform: skew(-25deg, -15deg);
+}
 /* -------------------------------s6 */
+.s6 .origin {
+  width: 160px;
+  height: 240px;
+  border: 1px solid black;
+  float: left;
+  margin: 160px 90px;
+}
+.s6 .rose:hover {
+  -moz-transform: rotateZ(10deg);
+  -ms-transform: rotateZ(10deg);
+  -o-transform: rotateZ(10deg);
+  -webkit-transform: rotateZ(10deg);
+  transform: rotateZ(10deg);
+}
+.s6 .ltop .rose:hover {
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  -moz-transform-origin: left top;
+  -o-transform-origin: left top;
+  transform-origin: left top;
+}
+.s6 .rtop .rose:hover {
+  -webkit-transform-origin: right top;
+  -ms-transform-origin: right top;
+  -moz-transform-origin: right top;
+  -o-transform-origin: right top;
+  transform-origin: right top;
+}
+.s6 .lbottom .rose:hover {
+  -webkit-transform-origin: left bottom;
+  -ms-transform-origin: left bottom;
+  -moz-transform-origin: left bottom;
+  -o-transform-origin: left bottom;
+  transform-origin: left bottom;
+}
+.s6 .rbottom .rose:hover {
+  -webkit-transform-origin: right bottom;
+  -ms-transform-origin: right bottom;
+  -moz-transform-origin: right bottom;
+  -o-transform-origin: right bottom;
+  transform-origin: right bottom;
+}
 /* -------------------------------s7 */
+.s7 #basic,
+.s7 #no-pers,
+.s7 #pers {
+  width: 152px;
+  height: 180px;
+  border: 1px solid black;
+  margin: 100px 90px;
+  float: left;
+}
+.s7 .rotatex img:hover {
+  -webkit-transform: rotateX(50deg);
+  -ms-transform: rotateX(50deg);
+  -moz-transform: rotateX(50deg);
+  -o-transform: rotateX(50deg);
+  transform: rotateX(50deg);
+}
+.s7 #pers .rotatex:hover {
+  -moz-perspective: 300px;
+  -ms-perspective: 300px;
+  -webkit-perspective: 300px;
+  -o-perspective: 300px;
+  perspective: 300px;
+}
 /* -------------------------------s8 */
