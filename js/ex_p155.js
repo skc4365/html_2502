@@ -167,7 +167,8 @@ result2 = "";
 })();
 s8.innerHTML = result1 + "<br>" + result2;
 // ----------------------------------------------------s9
-
+// 오브젝트 jang 생성하기 new CheckWeight("장보리", 168, 62)
+// 오브젝트 park 생성하기 new CheckWeight("박달재", 180, 88)
 function CheckWeight(name, height, weight) {
   this.userName = name;
   this.userHeight = height;
