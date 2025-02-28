@@ -1,0 +1,28 @@
+body {
+  width: 600px;
+  margin: 0 auto;
+}
+section {
+  margin: 3px;
+  padding: 5px;
+  background-color: aquamarine;
+}
+p#result {
+  font-size: 1.8em;
+  color: blueviolet;
+}
+div#galleryZone {
+  /* overflow: auto; */
+  /* overflow: hidden; */
+  /* overflow: scroll; */
+  /* overflow: visible; */
+  border: 1px solid red;
+}
+#galleryZone p:first-child {
+  margin: 10px;
+}
+#photo {
+  margin: 0 auto;
+  width: 560px;
+  height: 250px;
+}
